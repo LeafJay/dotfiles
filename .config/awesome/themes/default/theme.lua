@@ -1,7 +1,6 @@
 --[[
 
-     Rainbow Awesome WM theme 2.0
-     github.com/lcpz
+     Jay Awesome WM theme 2.0
 
 --]]
 
@@ -18,18 +17,19 @@ local theme                                     = {}
 theme.default_dir                               = require("awful.util").get_themes_dir() .. "default"
 theme.dir                                       = os.getenv("HOME") .. "/.config/awesome/themes/default"
 theme.wallpaper                                 = theme.dir .. "/drip2.png"
-theme.font                                      = "Terminus 10.5"
-theme.fg_normal                                 = "#9E9E9E"
-theme.fg_focus                                  = "#EBEBFF"
-theme.bg_normal                                 = "#242424"
-theme.bg_focus                                  = "#242424"
-theme.fg_urgent                                 = "#000000"
-theme.bg_urgent                                 = "#FFFFFF"
-theme.border_width                              = dpi(1)
-theme.border_normal                             = "#242424"
-theme.border_focus                              = "#EBEBFF"
-theme.taglist_fg_focus                          = "#EDEFFF"
-theme.taglist_bg_focus                          = "#242424"
+theme.font                                      = "FiraCode Nerd Font 10.5"
+theme.font_name                                 = "FiraCode Nerd Font"
+theme.fg_normal                                 = "#CDD6F4"
+theme.fg_focus                                  = "#94E2D5"
+theme.bg_normal                                 = "#1e1e2e"
+theme.bg_focus                                  = "#1e1e2e"
+theme.fg_urgent                                 = "#11111b"
+theme.bg_urgent                                 = "#F38BA8"
+theme.border_width                              = dpi(3)
+theme.border_normal                             = "#1e1e2e"
+theme.border_focus                              = "#94E2D5"
+theme.taglist_fg_focus                          = "#1e1e2e"
+theme.taglist_bg_focus                          = "#94E2D5"
 theme.menu_height                               = dpi(20)
 theme.menu_width                                = dpi(140)
 theme.ocol                                      = "<span color='" .. theme.fg_normal .. "'>"
@@ -96,7 +96,7 @@ mytextclock.font = theme.font
 theme.cal = lain.widget.cal({
     attach_to = { mytextclock },
     notification_preset = {
-        font = "Terminus 11",
+        font = theme.font,
         fg   = white,
         bg   = theme.bg_normal
     }
@@ -267,7 +267,7 @@ function theme.at_screen_connect(s)
             layout = wibox.layout.fixed.horizontal,
             wibox.widget.systray(),
             spr,
-            theme.mpd.widget,
+            --theme.mpd.widget,
             --theme.mail.widget,
             --theme.fs.widget,
             volumewidget,
