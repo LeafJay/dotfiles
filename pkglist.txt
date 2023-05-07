@@ -1,0 +1,6 @@
+zsh
+picom-pijulius-git
+neovim
+awesome
+kitty
+neofetch
