@@ -23,6 +23,7 @@ local plugins = {
         "typescript-language-server",
         "tailwindcss-language-server",
         "html-lsp",
+        "emmet-ls",
         "prettier",
         "stylua",
       }
