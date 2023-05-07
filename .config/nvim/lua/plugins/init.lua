@@ -19,7 +19,8 @@ local default_plugins = {
     "NvChad/ui",
     branch = "v2.0",
     lazy = false,
-    config = function() require "nvchad_ui"
+    config = function()
+      require "nvchad_ui"
     end,
   },
 
@@ -187,7 +188,6 @@ local default_plugins = {
         "hrsh7th/cmp-nvim-lsp",
         "hrsh7th/cmp-buffer",
         "hrsh7th/cmp-path",
-        "dcampos/cmp-emmet-vim",
       },
     },
 
